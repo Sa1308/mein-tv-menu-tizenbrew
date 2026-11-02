@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1920, height=1080, initial-scale=1">
+    <title>Mein TV Menü</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <main class="shell">
+        <header class="topbar">
+            <div class="brand">
+                <span class="brand-mark">S</span>
+                <div>
+                    <strong>Mein Fernseher</strong>
+                    <small>Samsung UE65NU7099</small>
+                </div>
+            </div>
+            <div class="clock">
+                <span id="date">Montag, 2. November</span>
+                <strong id="time">20:26</strong>
+            </div>
+        </header>
+
+        <section class="hero">
+            <p class="eyebrow">GUTEN ABEND</p>
+            <h1>Was möchtest du ansehen?</h1>
+            <p>Mit den Pfeiltasten navigieren und mit OK auswählen.</p>
+        </section>
+
+        <section class="tiles" id="tiles" aria-label="Hauptmenü">
+            <button class="tile tile-large is-focused" data-action="television">
+                <span class="tile-icon icon-tv"></span>
+                <span class="tile-copy"><b>Fernsehen</b><small>Live-TV öffnen</small></span>
+            </button>
+            <button class="tile tile-red" data-action="youtube">
+                <span class="tile-icon icon-play"></span>
+                <span class="tile-copy"><b>YouTube</b><small>Videos ansehen</small></span>
+            </button>
+            <button class="tile tile-blue" data-action="sources">
+                <span class="tile-icon icon-input"></span>
+                <span class="tile-copy"><b>Quellen</b><small>HDMI und Geräte</small></span>
+            </button>
+            <button class="tile tile-purple" data-action="media">
+                <span class="tile-icon icon-media"></span>
+                <span class="tile-copy"><b>Meine Medien</b><small>Fotos und Videos</small></span>
+            </button>
+            <button class="tile tile-dark" data-action="settings">
+                <span class="tile-icon icon-settings"></span>
+                <span class="tile-copy"><b>Mein Menü</b><small>Oberfläche anpassen</small></span>
+            </button>
+        </section>
+
+        <footer class="footer">
+            <span><i class="key">◀▶</i> Navigieren</span>
+            <span><i class="key">OK</i> Auswählen</span>
+            <span><i class="key">↩</i> Zurück</span>
+            <span class="connection"><i></i> Bereit</span>
+        </footer>
+    </main>
+
+    <section class="panel" id="panel" aria-hidden="true">
+        <div class="panel-card">
+            <div class="panel-heading">
+                <div>
+                    <p class="eyebrow" id="panel-label">MENÜ</p>
+                    <h2 id="panel-title">Titel</h2>
+                </div>
+                <span class="back-hint">Zurück: ↩</span>
+            </div>
+            <div id="panel-content" class="panel-content"></div>
+        </div>
+    </section>
+
+    <div class="toast" id="toast" role="status"></div>
+    <script src="js/app.js"></script>
+</body>
+</html>
+
