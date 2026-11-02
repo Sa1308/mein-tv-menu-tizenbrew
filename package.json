@@ -1,0 +1,10 @@
+{
+  "name": "mein-tv-menu-tizenbrew",
+  "version": "1.0.0",
+  "description": "Persönliches Vollbild-Menü für Samsung Tizen TV und TizenBrew",
+  "packageType": "app",
+  "appName": "Mein TV Menü",
+  "appPath": "index.html",
+  "keys": []
+}
+
